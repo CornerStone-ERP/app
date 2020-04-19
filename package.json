@@ -1,0 +1,30 @@
+{
+  "name": "@cornerstone-erp/app",
+  "version": "0.1.0",
+  "description": "CornerStone-ERP server application",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node  index.js start --modules ./modules/ --db-user skadeo_backend --db-pwd secret --debug",
+    "deploy": "node  index.js deploy --modules ./modules/ --db-user skadeo_backend --db-pwd secret --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CornerStone-ERP/app.git"
+  },
+  "keywords": [
+    "erp"
+  ],
+  "author": "Ioan CHIRIAC",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CornerStone-ERP/app/issues"
+  },
+  "homepage": "https://github.com/CornerStone-ERP/app#readme",
+  "dependencies": {
+    "commander": "^4.1.1",
+    "winston": "^3.2.1",
+    "@cornerstone-erp/material": "file:../material",
+    "@cornerstone-erp/prophet": "file:../prophet"
+  }
+}
